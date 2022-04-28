@@ -49,6 +49,10 @@ body {
     align-items: center;
     padding:20px;
 }
+.bottom-side #music-name,
+#artist-name{
+    padding-bottom:5px;
+}
 
 .duration-wrapper{
     width:300px;
