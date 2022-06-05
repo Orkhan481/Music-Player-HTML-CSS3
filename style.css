@@ -17,10 +17,12 @@ body {
     background: -webkit-linear-gradient(to right, #ffc500, #c21500);
     background: linear-gradient(to right, #ffc500, #c21500);
 }
-
+h2,h3{
+    margin:10px 0;
+}
 .player-container{
     width:400px;
-    height:500px;
+    height:540px;
     background-color:#fff;
     border-radius:25px;
     box-shadow:0 40px 100px rgba(0,0,0,0.8);
@@ -33,12 +35,13 @@ body {
 }
 
 .image-area img{
-    height:100%;
-    width:100%;
+    width:300px;
+    height:300px;
     position: absolute;
     top:-50px;
     left:50px;
     border-radius:25px;
+
    
 }
 
@@ -65,23 +68,44 @@ body {
     padding-bottom:3px;
 }
 
+.progress-container {
+    background: #dedede;
+    border-radius: 5px;
+    margin:5px;
+    height:4px;
+    cursor: pointer;
+    width: 90%;
+  }
+
 .progress{
     width:300px;
-    height:8px;
+    height:100%;
+    width:0;
     border-radius:25px;
-    background-color:#dedede;
+    background-color: #ffc500;
+    transition: width .7s ease;
 }
+  
+
+
 .player-controls{
     width:300px;
+    height:60px;
     display: flex;
     justify-content:space-around;
     align-items: center;
     margin-top:20px;
     /* Tam ortalanmadigi ucun margin verdim :) */
-    margin-left:15px;
+    margin-top:36px;
 }
 .player-controls i{
 width:50px;
 height:50px;
-font-size: 32px;
+font-size: 36px;
 }
+.player-controls i:nth-child(2){
+    font-size: 42px;
+}
+ #play{
+     align-self: flex-start;
+ }
